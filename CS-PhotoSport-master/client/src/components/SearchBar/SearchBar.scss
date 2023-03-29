@@ -1,0 +1,24 @@
+@import "../../config";
+
+.search-bar-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+    gap: .5rem;
+
+    input {
+        width: 100%;
+        font-family: $font;
+        background-color: black;
+        border: 2px solid white;
+        border-radius: 10px;
+        color: white;
+        padding: 1rem;
+
+        &::placeholder {
+            color: white;
+        }
+    }
+}

@@ -1,0 +1,63 @@
+.photo-container {
+    flex-grow: 1;
+    overflow: hidden;
+
+    &-image {
+        display: flex;
+        justify-content: center;
+
+        position: relative;
+        top: 0;
+        left: 0;
+
+        img {
+            display: block;
+            width: 100%;
+            height: 16rem;
+            object-fit: contain;
+            transition-duration: 300ms;
+            cursor: pointer;
+            position: relative;
+            top: 0;
+            left: 0;
+    
+            &:hover {
+                transform: scale(1.03);
+            }
+        }
+
+        svg {
+            position: absolute;
+            top: 70%;
+            right: 70%;
+        }
+    }
+
+    .add-to-cart {
+        background-color: #004171;
+        color: white;
+
+        &:hover {
+            background-color: lighten($color: #004171, $amount: 20%);
+        }
+    }
+
+    .added-to-cart {
+        background-color: rgb(236, 236, 236);
+        color: black;
+        border: solid;
+
+        &:hover {
+            cursor: default;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .photo-container {
+        img {
+            padding: 0;
+            height: auto;
+        }
+    }
+}

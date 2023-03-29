@@ -1,0 +1,41 @@
+@import "config";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #121212;
+}
+
+.download-app {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    color: white;
+
+    a {
+        text-decoration: none;
+        color: white;
+        img {
+            width: 13rem;
+        }
+    }
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+@media print {
+    html {
+        display: none;
+    }
+}

@@ -1,0 +1,43 @@
+{
+  "name": "cristian-salvadori-ecommerce",
+  "version": "1.0.0",
+  "description": "Sito web ecommerce nel quale si possono acquistare foto sportive",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "buildImages": "buildImages.bat",
+    "filterImages": "node filterImages.js",
+    "crea-album": "node crea-album.js",
+    "build": "call cd client && npm run build",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "mobile": "cd cs-photosport && npm start",
+    "cli": "cd cli && npm start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "chalk": "^5.0.1",
+    "chalk-animation": "^2.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "edit-json-file": "^1.7.0",
+    "express": "^4.17.2",
+    "inquirer": "^9.1.2",
+    "moment": "^2.29.3",
+    "mongodb": "^5.1.0",
+    "mongoose": "^7.0.3",
+    "mysql": "^2.18.1",
+    "photo-grid-box": "^2.0.4",
+    "stripe": "^8.195.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.8",
+    "concurrently": "^7.0.0",
+    "nodemon": "^2.0.15"
+  }
+}
